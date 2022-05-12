@@ -1,0 +1,625 @@
+JavaScript
+1.get output from javascript
+document.write('kush');
+alert('kush');
+console.log('kush');
+document.getElementById('box').innerHTML='kush';
+
+2.variable Declare methods
+var name="kush";
+let name1=" juthnai";
+const name2=" kush";
+
+3.Datatype of javascript
+
+string
+number
+boolen
+Array
+object
+Null
+undifined
+
+4.find the datatype of variable
+document.write(typeof x);
+
+5.Store and display value using javascript
+var name="kush";
+document.write(`hello ${name}, good morning`);        
+
+6.Opraters in javascript
+ arithmetic
+            + - * / ++ -- **
+            asignment 
+            = += -= /= **=
+            string
+            +
+            typeof
+                typeof
+                instanceof
+            comparison
+                == === > < != !== >= <= ?
+            logical
+                && || !
+            bitwise
+                & | ~ ^ << >>
+
+        var x=10,y=5;
+        document.write(x + y)
+        document.write('<br>')
+        document.write(x - y)
+        document.write('<br>')
+        document.write(x * y)
+        document.write('<br>')
+        document.write(x / y)
+        document.write('<br>')
+        document.write(x++)
+        document.write('<br>')
+        document.write(x--)
+        document.write('<br>')
+        document.write(x ** y)
+        document.write('<br>')
+        var x=10;
+        document.write(x+=4)
+        document.write('<br>')
+        document.write(x-=4)
+        document.write('<br>')
+        document.write(x/=4)
+        document.write('<br>')
+        document.write(x**=4)
+        document.write('<br>')
+        var name='kush',lname='juthani';
+        document.write(name+' '+lname)
+        var x=10,y=5;
+        document.write(x == y)
+        document.write('<br>')
+        document.write(x === y)
+        document.write('<br>')
+        document.write(x > y)
+        document.write('<br>')
+        document.write(x < y)
+        document.write('<br>')
+        document.write(x != y)
+        document.write('<br>')
+        document.write(x !== y)
+        document.write('<br>')
+        document.write(x <= y)
+        document.write('<br>')
+        document.write(x >= y)
+        document.write('<br>')
+		
+7.if condshion and Switch
+let x=1
+if(x>19){
+    document.write("Good")
+}else{
+    document.write("Bad")
+}
+if(x==15){
+    document.write("V Good")
+}else if(x>10){
+    document.write("Good")
+}else{
+    document.write("Bad")
+}
+switch(x){
+    case 10:
+    document.write("V good");
+    break;
+
+    case 15:
+    document.write("good");
+    break;
+
+    default:
+    document.write("Bad");
+}
+
+8.loops
+/*
+        for loop
+        do while
+        while
+    */
+   //for
+   for(var x=1;x<11;x++)
+   {
+       if(x==5)
+            //break;
+            //continue;
+       document.write('kush<br>');
+   }
+   //while
+   var x=1;
+   while(x<=10){
+       document.write(x*3+"<br>");
+       x++;
+   }
+   var x=1;
+   //do while
+   do{
+        document.write(x*3+"<br>");
+        x++;
+   }while(x<=10)
+   
+9.function with parametrs
+  // parametarise
+    function addnumber(x,y)
+    {
+        document.write(x+y);
+    }
+	
+//calling function
+
+addnumber(5,10);
+
+10.function with out parametrs
+   //non parametrise
+ function getcity()
+    {
+        var html='<select><option>rajkot</option><option>surat</option><option>mumbai</option></select>';
+        document.write(html);
+    }
+	
+	//calling function
+	  getcity();
+	 
+11.create a function without name or without calling call function
+//index.html
+
+<script src="test1.js"></script>
+<script src="test2.js"></script>
+
+//test1.js
+(function () {
+    let x=10;
+    let y=20;
+    document.write(x+y);
+})();
+//test2.js
+(function () {
+    let x=30;
+    let y=50;
+    document.write(x*y);
+})();
+
+12.tack input form user
+//prompt
+var con=prompt("Please Enter your name:");
+    document.write(con);
+	
+13.String builtin functions
+
+ar name="kush";
+    //fined the length
+    document.write(name.length+"<br>");
+    //search in the string
+    var name="kush is good boy";
+    document.write(name.search("good")+"<br>");
+    //first index of
+    var name="kush is good boy";
+    document.write(name.indexOf("good")+"<br>");
+    //last index of
+    var name="kush is good boy good";
+    document.write(name.lastIndexOf("good")+"<br>");
+    //slice of string
+    //slice tack nagative number also
+    var name="kush is good boy good";
+    document.write(name.slice(11,15)+"<br>");
+    //substring
+    var name="kush is good boy good";
+    document.write(name.substring(11,18)+"<br>");
+     //substr
+     var name="kush is good boy good";
+    document.write(name.substr(11,4)+"<br>");
+    //replace
+    var name="kush is good boy good";
+    document.write(name.replace("kush","kush juthani")+"<br>");
+    //tolovercase
+    var name="kush is good boy good";
+    document.write(name.toLowerCase()+"<br>");
+    //touppercase
+    var name="kush is good boy good";
+    document.write(name.toUpperCase()+"<br>");
+    //trim
+    var name="kush is good boy good";
+    document.write(name.trim()+"<br>");
+    //concat
+    var name="kush is good boy good";
+    var name1="yaa";
+    document.write(name.concat(" ",name1)+"<br>");
+	
+	
+14.Array Declare
+//2 ways to declare the array
+var arr=['kush','alok','meet'];
+//var name=new Array('kush','alok','meet');
+
+
+15.print arr
+for(var x=0;x<=2;x++)
+{
+	console.lgo(arr[x]);
+}
+    	
+		
+16.2D array in javascript
+ var arr=[
+        ['kush','rajkot'],
+        ['alok','pune'],
+        ['meet','mumbai']
+    ];
+	
+17.array oprashions
+
+  /*
+    length
+    length=0
+    concat(arr)
+    pop()
+    shift()
+    push()
+    unshift()
+    splice(postion,length)
+    indexof()
+    Array.isArray
+    split
+    join
+    */
+    var arr=['kush','alok'];
+    var arr1=['jay','meet','raj'];
+    var arr2=['jay','meet','raj','kush'];
+    var arr3=['jay','meet','raj','kush'];
+    var arr4=['jay','meet','raj','kush'];
+    var result=arr.concat(arr1);
+    document.write(arr.length+"<br>");
+    arr.length=0;
+    document.write(arr.length+"<br>");
+    document.write(result+"<br>");
+    arr1.push("kush");
+    document.write(arr1+"<br>");
+    arr1.pop();
+    document.write(arr1+"<br>");
+    arr1.shift();
+    document.write(arr1+"<br>");
+    arr2.unshift('kush');
+    document.write(arr2+"<br>");
+    arr3.splice(2);
+    document.write(arr3+"<br>");
+    document.write(arr4.indexOf("kush")+"<br>");
+    document.write(Array.isArray(arr4)+"<br>");
+	
+18.call foreach loop
+
+var arr=['kush','alok','jay'];
+arr.forEach(function(value,key){
+    document.write(value);
+    document.write(key);
+    document.write("<br>");
+});
+//second way to call the foreach loop
+arr.forEach(arrFun);
+function arrFun(val,key){
+    document.write(val);
+    document.write(key);
+    document.write("<br>");
+}
+
+
+19.Create arr with function and call it function
+
+var arr={
+        name:'kush',
+        age:'22',
+        lname:'juthani',
+        city:['rajkot','mumbai'],
+        education:{
+            pg:'MCA',
+            ug:'BCA'
+        },
+        fullname:function(){
+            return this.name+' '+this.lname;
+        }
+    };
+    document.write(arr.fullname());
+	
+20.objects
+
+var obj1=new Object();
+obj1.name='kush';
+obj1.age=20;
+var obj={
+    name:'kush',
+    age:20,
+    mobile:98745631
+}
+//delete obj.name;
+//document.write('name' in obj);
+//document.write(obj.name);
+
+21.call function using variable name
+var obj={
+    fname:'kush',
+    lname:'juthani',
+    get fullname(){
+        return this.fname+" "+this.lname;
+    },
+    set setfullname(par){
+        this.fname=par.fn;
+        this.lname=par.ln;
+    }
+}
+obj.setfullname={fn:'alok',ln:'guriya'}
+document.write(obj.fullname);
+	
+	
+22.Call function with object name
+function User(fn,ln){
+    this.fname=fn;
+    this.lname=ln;
+    this.fullname=function(){
+        return this.fname+" "+this.lname;
+    }
+}
+var obj = new User('kush','juthani');
+var obj1 = new User('alok','guriya');
+console.log(obj1);
+
+23.Prototype
+<script>
+    function User(fn,ln){
+        this.fname=fn;
+        this.lname=ln;
+        
+    }
+    User.prototype.fullname=function(){
+            return this.fname+" "+this.lname;
+        }
+    var obj = new User('kush','juthani');
+    var obj1 = new User('alok','guriya');
+    console.log(obj1.fullname());
+    </script>
+	
+24.math functions
+var x=10.4;
+document.write(Math.round(x)+'<br>');
+document.write(Math.ceil(x)+'<br>');
+document.write(Math.floor(x)+'<br>');
+document.write(Math.pow(x,2)+'<br>');
+document.write(Math.sqrt(x)+'<br>');
+document.write(Math.abs(x)+'<br>');
+document.write(Math.min(10,5,78,1)+'<br>');
+document.write(Math.max(10,8,63,74,5)+'<br>');
+var y=Math.random()*100000;
+document.write(Math.ceil(y)+'<br>');
+document.write(Math.abs(x)+'<br>');
+
+25.Date in javascript
+
+//date object
+    //var d=new Date('2021-05-15');
+    //var d=new Date('2021/05/15');
+    var d=new Date();
+    //document.write(d.getFullYear());
+    //document.write(d.getMonth());
+    //document.write(d.getDate());
+    //document.write(d.getHours());
+    //document.write(d.getMinutes());
+    //document.write(d.getSeconds());
+    //document.write(d.getDay());
+    //document.write(d.getMilliseconds());
+    //futucher date
+    d.setDate(d.getDate()+2);
+    document.write(d);
+	
+	
+26.Parsing the values
+ function click1(){
+        var x=parseInt(document.getElementById('num1').value);
+        var y=parseInt(document.getElementById('num2').value);
+        console.log(x+y);
+        document.getElementById('res').innerHTML=x+y;
+    }
+	
+	
+27.find element by class name
+ let name=document.getElementsByClassName("name");
+    console.log(name[1]);
+	
+28.find element by tag name
+ let id=document.getElementById('test');
+    let name=document.getElementsByTagName("div");
+    console.log(name);
+	
+29.query selector
+let name1=document.querySelectorAll('#box');
+    let count=name1.length;
+    for(let x=0;x<count;x++)
+    {
+        console.log(name1[x]);
+    }
+	
+	
+30.inheritance
+
+<ul id="box">
+    <li>kush</li>
+    <li id="box1">alok</li>
+    <li>jerry</li>
+</ul>
+<script>
+    let name=document.getElementById('box');
+    console.log(name.firstElementChild);
+    console.log(name.lastElementChild);
+    console.log(name.children);
+    let name1=document.getElementById('box1');
+    console.log(name1.parentElement);
+    console.log(name1.nextElementSibling);
+    console.log(name1.previousElementSibling);
+</script>
+
+31.add class
+<ul id="box">
+    <li>kush</li>
+</ul>
+<input type="text" id="name">
+<input type="button" onclick="add_functino()" value="add more">
+<script>
+function add_functino(){
+    let libox=document.getElementById("box");
+    let newli=document.createElement("li");
+    newli.className="abc";
+    newli.id="ere";
+    let name=document.getElementById("name").value;
+    let textnode=document.createTextNode(name);
+    newli.appendChild(textnode);
+    libox.appendChild(newli);
+    document.getElementById("name").value="";
+}
+</script>
+
+32.find li using inheritance
+
+<ul id="box">
+    <li>kush</li>
+    <li>juthani</li>
+    <li>abc</li>
+</ul>
+<script>
+    let boxElement=document.getElementById('box');
+    let litebox=boxElement.firstElementChild.nextElementSibling;
+    boxElement.removeChild(litebox);
+</script>
+
+33.add event lisner
+<input type="button" id="btn" value="button">
+<script>
+    let btn=document.getElementById('btn');
+
+    btn.addEventListener('click',test);
+   // btn.addEventListener('click',test1);
+    function test(){
+        console.log('test');
+        btn.removeEventListener('click',test);
+    }
+    function test1(){
+        console.log('test1');
+    }
+</script>
+
+34.create Element
+<ul id="box">
+    <li>kush</li>
+    <li>alok</li>
+</ul>
+<script>
+    let box=document.getElementById('box');
+    let pos=box.lastElementChild;
+
+    let li=document.createElement('li');
+    li.textContent="juthani";
+
+    box.replaceChild(li,pos);
+</script>
+
+35.CRUD in class
+<div id="box">kush</div>
+<input type="submit" onclick="addattr()" value="add">
+<input type="submit" onclick="removeattr()" value="remove">
+<input type="submit" onclick="getattr()" value="getclass">
+<input type="submit" onclick="hasattr()" value="has">
+<script>
+function addattr(){
+    let name=document.getElementById("box");
+    name.setAttribute("class","abc");
+}
+function removeattr(){
+    let name=document.getElementById("box");
+    name.removeAttribute("class");
+}
+function getattr(){
+    let name=document.getElementById("box");
+    console.log(name.getAttribute("class"));
+}
+function hasattr(){
+    let name=document.getElementById("box");
+    console.log(name.hasAttribute("class"));
+}
+</script>
+
+36.inner adjesent
+<div id="box">
+    <div>kush</div>
+</div>
+<script>
+    let box=document.getElementById('box');
+    box.insertAdjacentHTML("beforebegin",'<p>juthani</p>');
+    box.insertAdjacentHTML("afterbegin",'<p>juthani1</p>');
+    box.insertAdjacentHTML("beforeend",'<p>juthani2</p>');
+    box.insertAdjacentHTML("afterend",'<p>juthani3</p>');
+</script>
+
+37.set interval
+<div id="box"></div>
+<script>
+    setInterval(test,500)
+    let x=1;
+    function test()
+    {
+        document.getElementById('box').innerHTML=x;
+        x++;
+    }
+</script>
+
+38.set time out
+<input type="button" value="click" onclick="timeout()">
+<script>
+    let timeo=setTimeout(test,3000)
+    function test(){
+        console.log("hello");
+    }
+    function timeout()
+    {
+        clearTimeout(timeo);
+    }
+</script>
+
+39.window open 
+<script>
+    let url='https://google.com';
+    let name='test';
+    let options="width=400;height=500;"
+    let lc=window.open(url,name,options);
+lc.close();
+</script>
+
+40.addEventListener 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>#div1{height: 500px;width: 500px;background-color: red;}</style>
+</head>
+<body>
+    <div id="div1">
+        <a href="javascript:void(0)" id="a">click</a>
+    </div>
+</body>
+</html>
+<script>
+    document.getElementById('div1').addEventListener("click",function(){
+        console.log('div');
+    });
+    document.getElementById('a').addEventListener("click",function(){
+        console.log('a');
+    });
+    document.addEventListener("click",function(){
+        console.log('body')
+    })
+</script>
+
+41. 
